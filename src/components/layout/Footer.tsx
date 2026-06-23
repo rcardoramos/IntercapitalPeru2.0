@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   const location = useLocation();
 
   const companyLinks = [
@@ -186,15 +186,18 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-neutral font-medium">
-          <p>© {currentYear} INTERCAPITAL PERU E.I.R.L RUC 20612766780. Todos los derechos reservados.</p>
+        <div className="border-t border-white/5 pt-8 flex flex-col items-center justify-center gap-4 text-xs text-gray-neutral font-medium text-center">
+          {/* <p>© {currentYear} INTERCAPITAL PERU E.I.R.L RUC 20612766780. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6">
             <span>Regulado bajo normas del marco legal peruano</span>
             <span className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               Sistemas de Seguridad Activos
             </span>
-          </div>
+          </div> */}
+          <p>
+            Desarrollado por Ricardo Ramos Julca - Instituto Cibertec - Curso: EXPERIENCIA FORMATIVA EN SITUACIÓN REAL DE TRABAJO
+          </p>
         </div>
       </Container>
     </footer>
